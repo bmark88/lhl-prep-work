@@ -5,7 +5,7 @@ function sortingNumbers(a, b) {
 let sumLargestNumbers = function(data) {
   data.reverse(data.sort(sortingNumbers));
   return data[0] + data[1];
-}
+};
 
 
 console.log(sumLargestNumbers([1, 10]));

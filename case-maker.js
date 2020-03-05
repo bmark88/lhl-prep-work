@@ -13,7 +13,7 @@ let camelCase = function(input) {
       for (let k = 1; k < stringArray.length; k++) {
         camelString = stringArray[k].charAt(0).toUpperCase() + stringArray[k].substring(1);
         remainingString += camelString;
-      } 
+      }
       
       return firstWord + remainingString;
     }

@@ -5,13 +5,13 @@ const urlEncode = function(text) {
   for (let i = stringArray.length - 1; i >= 0; i--) {
     if (stringArray[i] == false) {
       stringArray.splice(i, 1);
-    } 
+    }
   }
   
   for (let i = 0; i < stringArray.length; i++) {
-    urlString += stringArray[i] + '%20'
+    urlString += stringArray[i] + '%20';
   } return (urlString.substr(0,[urlString.length - 3]));
-}
+};
 
 
 

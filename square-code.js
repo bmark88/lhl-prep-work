@@ -7,19 +7,19 @@ const squareCode = (message) => {
 
   // converting original string into squared string within an array
   for (let i = 0; i < text.length; i += charPerLine) {
-    squareArray.push(text.substr(i, charPerLine))
+    squareArray.push(text.substr(i, charPerLine));
   }
 
   for (let i = 0; i < charPerLine; i++) {
     for (let j = 0; j < squareArray.length; j++) {
       if (squareArray[j][i]) { // removing any undefined (falsy) values if length is shorter than charPerLine
-       codedString += squareArray[j][i];
+        codedString += squareArray[j][i];
       }
     }
     codedString += ' ';
   }
 
-return codedString;
+  return codedString;
 };
 
 //console.log(squareCode("chill out"));

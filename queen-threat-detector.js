@@ -11,11 +11,11 @@ let generateBoard = (whiteQueen, blackQueen) => {
     }
   }
 
-board[WQ[0]][WQ[1]] = 1;
-board[BQ[0]][BQ[1]] = 1;
+  board[WQ[0]][WQ[1]] = 1;
+  board[BQ[0]][BQ[1]] = 1;
 
-return board;
-}
+  return board;
+};
 
 let queenThreat = (generatedBoard) => {
   const board = generatedBoard;
@@ -50,14 +50,14 @@ let queenThreat = (generatedBoard) => {
     threat = true;
   }
   return threat;
-}
+};
 
 
 // let whiteQueen = [0, 5];
 // let blackQueen = [5, 0];
 
- let whiteQueen = [0, 0];
- let blackQueen = [5, 7];
+let whiteQueen = [0, 0];
+let blackQueen = [5, 7];
 let generatedBoard = generateBoard(whiteQueen, blackQueen);
 console.log(generatedBoard);
 console.log(queenThreat(generatedBoard));

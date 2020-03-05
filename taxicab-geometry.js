@@ -53,7 +53,7 @@ const blocksAway = function(directions) {
   finalPosition.east = eastCount - westCount;
   finalPosition.north = northCount - southCount;
 
-  return finalPosition
+  return finalPosition;
 };
 
 console.log(blocksAway(["right", 2, "left", 3, "left", 1]));

@@ -4,7 +4,7 @@ const multiplicationTable = function(maxValue) {
   for (x = 1; x < maxValue + 1; x++) {
     for (y = 1; y < maxValue + 1; y++) {
       row += (x * y) + ' ';
-    } row += '\n'
+    } row += '\n';
   }
   return row;
 };

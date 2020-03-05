@@ -3,8 +3,8 @@ const prompt = require("prompt-sync")();
 let answer = prompt("Guess a number: ");
 
 const randomNumber = () => {
-  return Math.floor(Math.random()*100) + 1;
-}
+  return Math.floor(Math.random() * 100) + 1;
+};
 
 const guessTheNumber = () => {
   const secretNumber = randomNumber();
@@ -30,6 +30,6 @@ const guessTheNumber = () => {
       console.log('You got it! You took ' + attempts + ' attempts!');
     }
   }
-}
+};
 
 guessTheNumber(answer);

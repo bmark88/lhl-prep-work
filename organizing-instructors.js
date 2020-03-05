@@ -8,11 +8,11 @@ const organizeInstructors = function(instructors) {
   for (let i = 0; i < instructors.length; i++) {
     
     if (instructors[i].course === "iOS") {
-      courseInstructors.iOS.push(instructors[i].name)
+      courseInstructors.iOS.push(instructors[i].name);
     } else if (instructors[i].course === "Web") {
-      courseInstructors.Web.push(instructors[i].name)
+      courseInstructors.Web.push(instructors[i].name);
     } else if (instructors[i].course === "Blockchain") {
-      courseInstructors.Blockchain.push(instructors[i].name)
+      courseInstructors.Blockchain.push(instructors[i].name);
     }
 
   } return courseInstructors;

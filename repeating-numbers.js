@@ -8,11 +8,11 @@ let repeatNumbers = function(data) {
     for (k = 0; k < data[i][1]; k++) {
       numString += data[i][0].toString();
     }
-   finalStringArray.push(numString);
+    finalStringArray.push(numString);
 
   } return finalStringArray.toString();
 };
 
 console.log(repeatNumbers([[1, 10]]));
 console.log(repeatNumbers([[1, 2], [2, 3]]));
-console.log(repeatNumbers([[10, 4], [34, 6], [92, 2]]))
+console.log(repeatNumbers([[10, 4], [34, 6], [92, 2]]));
